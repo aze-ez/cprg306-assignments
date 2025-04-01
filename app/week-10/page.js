@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Home() {
   const { user, gitHubSignIn, firebaseSignOut } = useUserAuth();
 
-  // Handle login and redirect
+  //
   const handleLogin = async () => {
     try {
       await gitHubSignIn();
@@ -16,7 +16,7 @@ export default function Home() {
     }
   };
 
-  // Handle logout and redirect
+
   const handleLogout = async () => {
     try {
       await firebaseSignOut();

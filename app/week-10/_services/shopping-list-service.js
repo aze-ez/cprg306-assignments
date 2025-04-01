@@ -29,8 +29,8 @@ export async function deleteItem(userId, itemId) {
         console.log("🗑️ Deleting item:", itemId);
         const itemRef = doc(db, "users", userId, "items", itemId);
         await deleteDoc(itemRef);
-        console.log("✅ Item deleted!");
+        console.log(" Item deleted!");
     } catch (error) {
-        console.error("❌ Error deleting item:", error);
+        console.error(" Error deleting item:", error);
     }
 }
